@@ -1,0 +1,15 @@
+.header {
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo {
+  width: 85vw;
+}
+
+.content {
+  margin: 10%;
+}
