@@ -1,0 +1,36 @@
+.header {
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo {
+  width: 85vw;
+}
+
+.social-bar--mobile {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.social-links--mobile {
+  height: 40px;
+  display: flex;
+  flex: auto;
+  align-items: center;
+  background-color: #000;
+}
+
+.social-link--mobile {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #47a89b;
+  text-decoration: none;
+}

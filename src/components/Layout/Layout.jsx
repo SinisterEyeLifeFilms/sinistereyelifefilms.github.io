@@ -1,19 +1,10 @@
 import { Outlet } from 'react-router-dom';
-import Navbar from '../Navbar/Navbar';
+import Header from '../Header/Header';
 import './Layout.css';
-import Logo from '../../assets/self-logo.png';
 
 const Layout = () => (
   <>
-    <header className="header">
-      <img
-        src={Logo}
-        alt="SELF-Logo"
-        className="logo"
-      />
-      <Navbar />
-    </header>
-
+    <Header />
     <main className="content">
       <Outlet />
     </main>
