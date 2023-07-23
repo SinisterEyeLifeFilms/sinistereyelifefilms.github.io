@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import YouTube from 'react-youtube';
 import PropTypes from 'prop-types';
 
@@ -8,9 +9,46 @@ const Video = ({ video }) => {
     description,
   } = video;
 
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  let videoHeight;
+  let videoWidth;
+
+  if (windowSize.width < 375) {
+    videoHeight = '150';
+    videoWidth = '240';
+  } else if (windowSize.width < 768) {
+    videoHeight = '180';
+    videoWidth = '300';
+  } else if (windowSize.width < 1024) {
+    videoHeight = '300';
+    videoWidth = '500';
+  } else {
+    videoHeight = '420';
+    videoWidth = '700';
+  }
+
   const opts = {
-    height: '180',
-    width: '300',
+    height: videoHeight,
+    width: videoWidth,
     playerVars: {
       autoplay: 0,
       controls: 1,
