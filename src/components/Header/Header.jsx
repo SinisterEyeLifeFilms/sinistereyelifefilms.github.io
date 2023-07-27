@@ -27,7 +27,7 @@ const Header = () => (
             target="_blank"
             rel="noreferrer"
           >
-            <FaYoutube size={20} />
+            <FaYoutube size={25} />
           </Link>
         </li>
 
@@ -38,7 +38,7 @@ const Header = () => (
             target="_blank"
             rel="noreferrer"
           >
-            <FaFacebook size={20} />
+            <FaFacebook size={25} />
           </Link>
         </li>
 
@@ -49,7 +49,7 @@ const Header = () => (
             target="_blank"
             rel="noreferrer"
           >
-            <FaInstagram size={20} />
+            <FaInstagram size={25} />
           </Link>
         </li>
 
@@ -60,7 +60,7 @@ const Header = () => (
             duration={700}
             className="social-link--mobile"
           >
-            <FaEnvelope size={20} />
+            <FaEnvelope size={25} />
           </Link>
         </li>
       </ul>

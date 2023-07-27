@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -19,7 +20,7 @@
 }
 
 .social-links--mobile {
-  height: 40px;
+  height: 50px;
   display: flex;
   flex: auto;
   align-items: center;
