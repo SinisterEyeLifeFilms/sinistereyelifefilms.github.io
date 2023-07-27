@@ -8,4 +8,8 @@
   align-items: center;
   gap: 30px;
   margin-bottom: 30px;
+  padding: 4% 2%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(126, 125, 125, 0.5);
+  background-color: #9b9898;
 }

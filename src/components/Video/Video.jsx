@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import YouTube from 'react-youtube';
 import PropTypes from 'prop-types';
+import './Video.css';
 
 const Video = ({ video }) => {
   const {
@@ -67,9 +68,9 @@ const Video = ({ video }) => {
 
   return (
     <>
-      <h2>{title}</h2>
-      <p>{description}</p>
+      <h2 className="title">{title}</h2>
       <YouTube videoId={getYoutubeVideoId(videoLink)} opts={opts} />
+      <p className="description">{description}</p>
     </>
   );
 };
