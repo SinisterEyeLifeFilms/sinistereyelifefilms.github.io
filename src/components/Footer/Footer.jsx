@@ -1,6 +1,8 @@
+import './Footer.css';
+
 const Footer = () => (
   <footer className="footer">
-    Footer
+    All Rights Reserved &copy; 2023
   </footer>
 );
 
