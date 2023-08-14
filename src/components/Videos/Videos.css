@@ -6,10 +6,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   margin-bottom: 30px;
   padding: 4% 2%;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(126, 125, 125, 0.5);
   background-color: #9b9898;
 }

@@ -5,6 +5,7 @@
 }
 
 .description {
-  padding: 10px;
+  padding: 0 15px 20px 20px;
   font-style: italic;
+  font-size: 18px;
 }
