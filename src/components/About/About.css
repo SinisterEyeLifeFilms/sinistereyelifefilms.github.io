@@ -1,15 +1,41 @@
+.about-title {
+  text-align: center;
+}
+
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   gap: 30px;
   padding: 20px;
 }
 
 .portrait {
   object-fit: cover;
-  width: 60%;
+  width: 300px;
   border-radius: 10px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    height: max-content;
+    padding: 50px;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  .portrait {
+    max-width: 400px;
+  }
+
+  .about-text {
+    width: 600px;
+  }
 }
