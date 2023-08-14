@@ -11,7 +11,7 @@
   width: 85vw;
 }
 
-.social-bar--mobile {
+.social-bar {
   display: flex;
   position: fixed;
   bottom: 0;
@@ -20,7 +20,7 @@
   z-index: 100;
 }
 
-.social-links--mobile {
+.social-links {
   height: 50px;
   display: flex;
   flex: auto;
@@ -28,10 +28,40 @@
   background-color: #000;
 }
 
-.social-link--mobile {
+.social-link {
   flex: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+  }
+
+  .logo {
+    width: 30vw;
+  }
+
+  .social-bar {
+    top: 35vh;
+    flex-direction: column;
+    left: 0;
+    right: 95vw;
+    bottom: 40vh;
+    max-width: 60px;
+    }
+
+  .social-link {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .social-link:hover {
+    transform: scale(1.4);
+  }
 }
