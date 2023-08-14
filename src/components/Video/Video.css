@@ -1,0 +1,11 @@
+.title {
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  padding: 0 15px 20px 20px;
+  font-style: italic;
+  font-size: 18px;
+}
