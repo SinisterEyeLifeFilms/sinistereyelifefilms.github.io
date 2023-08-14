@@ -19,11 +19,11 @@ const Header = () => (
     <Navbar />
     {/* Mobile Social icons */}
     <div>
-      <ul className="social-bar--mobile">
-        <li className="social-links--mobile">
+      <ul className="social-bar">
+        <li className="social-links">
           <Link
             to="https://www.youtube.com/@sinistereye3020"
-            className="social-link--mobile"
+            className="social-link"
             target="_blank"
             rel="noreferrer"
           >
@@ -31,10 +31,10 @@ const Header = () => (
           </Link>
         </li>
 
-        <li className="social-links--mobile">
+        <li className="social-links">
           <Link
             to="https://www.facebook.com/profile.php?id=100077544337082"
-            className="social-link--mobile"
+            className="social-link"
             target="_blank"
             rel="noreferrer"
           >
@@ -42,10 +42,10 @@ const Header = () => (
           </Link>
         </li>
 
-        <li className="social-links--mobile">
+        <li className="social-links">
           <Link
             to="https://instagram.com"
-            className="social-link--mobile"
+            className="social-link"
             target="_blank"
             rel="noreferrer"
           >
@@ -53,12 +53,12 @@ const Header = () => (
           </Link>
         </li>
 
-        <li className="social-links--mobile">
+        <li className="social-links">
           <Link
             to="mailto:sinistereyelifefilms@gmail.com"
             smooth
             duration={700}
-            className="social-link--mobile"
+            className="social-link"
           >
             <FaEnvelope size={25} color="#2eff2e" />
           </Link>
