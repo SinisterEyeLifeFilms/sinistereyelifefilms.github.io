@@ -13,3 +13,28 @@
   box-shadow: 0 0 10px rgba(126, 125, 125, 0.5);
   background-color: #9b9898;
 }
+
+@media screen and (min-width: 1024px) {
+  .videoGallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+
+  .videoItem {
+    margin-bottom: 0;
+    padding: 4% 2%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .videoGallery {
+    grid-template-columns: repeat(3, 25vw);
+  }
+
+  .videoItem:last-child {
+    grid-column: 2 / 3;
+  }
+}

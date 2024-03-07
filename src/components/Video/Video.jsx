@@ -37,14 +37,14 @@ const Video = ({ video }) => {
     videoHeight = '150';
     videoWidth = '240';
   } else if (windowSize.width < 768) {
-    videoHeight = '180';
-    videoWidth = '300';
+    videoHeight = '186';
+    videoWidth = '310';
   } else if (windowSize.width < 1024) {
     videoHeight = '300';
     videoWidth = '500';
   } else {
-    videoHeight = '420';
-    videoWidth = '700';
+    videoHeight = '210';
+    videoWidth = '350';
   }
 
   const opts = {
